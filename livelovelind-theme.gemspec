@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.version       = "0.2.0"
   s.license       = "CC0-1.0"
   s.authors       = ["LiveLoveLind"]
-  s.email         = ["livelovelind@gmail.com"]
+  s.email         = ["LiveLoveLind.weddings@gmail.com"]
   s.summary       = "LiveLoveLind"
 
   s.files         = `git ls-files -z`.split("\x0").select do |f|
