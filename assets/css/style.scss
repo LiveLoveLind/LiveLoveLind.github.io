@@ -2,6 +2,7 @@
 ---
 
 @import 'custom-theme';
+@import "variables";
 
 /**
 * Original template credits below
@@ -16,17 +17,17 @@
 --------------------------------------------------------------*/
 body {
     font-family: "Open Sans", sans-serif;
-    background: #0c0b09;
+    background: $base-theme;
     color: #fff;
   }
 
   a {
-    color: #cda45e;
+    color: $primary-highlight;
     text-decoration: none;
   }
 
   a:hover {
-    color: #d9ba85;
+    color: $primary-highlight-dim;
     text-decoration: none;
   }
 
@@ -54,8 +55,8 @@ body {
     top: calc(50% - 30px);
     left: calc(50% - 30px);
     border: 6px solid #1a1814;
-    border-top-color: #cda45e;
-    border-bottom-color: #cda45e;
+    border-top-color: $primary-highlight;
+    border-bottom-color: $primary-highlight;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -95,17 +96,17 @@ body {
     height: 44px;
     border-radius: 50px;
     transition: all 0.4s;
-    border: 2px solid #cda45e;
+    border: 2px solid $primary-highlight;
   }
 
   .back-to-top i {
     font-size: 28px;
-    color: #cda45e;
+    color: $primary-highlight;
     line-height: 0;
   }
 
   .back-to-top:hover {
-    background: #cda45e;
+    background: $primary-highlight;
     color: #1a1814;
   }
 
@@ -143,7 +144,7 @@ body {
 
   #topbar .contact-info i {
     font-style: normal;
-    color: #d9ba85;
+    color: $primary-highlight-dim;
   }
 
   #topbar .contact-info i span {
@@ -157,7 +158,7 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    color: #cda45e;
+    color: $primary-highlight;
   }
 
   #topbar .languages ul a {
@@ -217,7 +218,7 @@ body {
   --------------------------------------------------------------*/
   .book-a-table-btn {
     margin: 0 0 0 15px;
-    border: 2px solid #cda45e;
+    border: 2px solid $primary-highlight;
     color: #fff;
     border-radius: 50px;
     padding: 8px 25px;
@@ -229,7 +230,7 @@ body {
   }
 
   .book-a-table-btn:hover {
-    background: #cda45e;
+    background: $primary-highlight;
     color: #fff;
   }
 
@@ -280,7 +281,7 @@ body {
   }
 
   .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-    color: #d9ba85;
+    color: $primary-highlight-dim;
   }
 
   .navbar .dropdown ul {
@@ -313,7 +314,7 @@ body {
   }
 
   .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-    color: #cda45e;
+    color: $primary-highlight;
   }
 
   .navbar .dropdown:hover > ul {
@@ -404,7 +405,7 @@ body {
   }
 
   .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-    color: #cda45e;
+    color: $primary-highlight;
   }
 
   .navbar-mobile .getstarted {
@@ -436,7 +437,7 @@ body {
   }
 
   .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-    color: #cda45e;
+    color: $primary-highlight;
   }
 
   .navbar-mobile .dropdown > .dropdown-active {
@@ -485,7 +486,7 @@ body {
   }
 
   #hero h1 span {
-    color: #cda45e;
+    color: $primary-highlight;
   }
 
   #hero h2 {
@@ -509,11 +510,11 @@ body {
     transition: 0.3s;
     line-height: 1;
     color: white;
-    border: 2px solid #cda45e;
+    border: 2px solid $primary-highlight;
   }
 
   #hero .btn-menu:hover, #hero .btn-book:hover {
-    background: #cda45e;
+    background: $primary-highlight;
     color: #fff;
   }
 
@@ -524,7 +525,7 @@ body {
   #hero .play-btn {
     width: 94px;
     height: 94px;
-    background: radial-gradient(#cda45e 50%, rgba(205, 164, 94, 0.4) 52%);
+    background: radial-gradient($primary-highlight 50%, rgba(205, 164, 94, 0.4) 52%);
     border-radius: 50%;
     display: block;
     position: relative;
@@ -570,7 +571,7 @@ body {
   }
 
   #hero .play-btn:hover::after {
-    border-left: 15px solid #cda45e;
+    border-left: 15px solid $primary-highlight;
     transform: scale(20);
   }
 
@@ -690,7 +691,7 @@ body {
     font-size: 36px;
     font-weight: 700;
     font-family: "Playfair Display", serif;
-    color: #cda45e;
+    color: $primary-highlight;
   }
 
   /*--------------------------------------------------------------
@@ -784,8 +785,8 @@ body {
     height: 60px;
     z-index: 1;
     content: '';
-    border-left: 5px solid #cda45e;
-    border-top: 5px solid #cda45e;
+    border-left: 5px solid $primary-highlight;
+    border-top: 5px solid $primary-highlight;
     transition: .5s;
   }
 
@@ -797,8 +798,8 @@ body {
     height: 60px;
     z-index: 2;
     content: '';
-    border-right: 5px solid #cda45e;
-    border-bottom: 5px solid #cda45e;
+    border-right: 5px solid $primary-highlight;
+    border-bottom: 5px solid $primary-highlight;
     transition: .5s;
   }
 
@@ -833,7 +834,7 @@ body {
   .about .content ul i {
     font-size: 20px;
     padding-right: 4px;
-    color: #cda45e;
+    color: $primary-highlight;
   }
 
   .about .content p:last-child {
@@ -860,7 +861,7 @@ body {
     display: block;
     font-size: 28px;
     font-weight: 700;
-    color: #cda45e;
+    color: $primary-highlight;
   }
 
   .why-us .box h4 {
@@ -879,7 +880,7 @@ body {
   }
 
   .why-us .box:hover {
-    background: #cda45e;
+    background: $primary-highlight;
     padding: 30px 30px 70px 30px;
     box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
   }
@@ -914,7 +915,7 @@ body {
   }
 
   .menu #menu-flters li:hover, .menu #menu-flters li.filter-active {
-    color: #cda45e;
+    color: $primary-highlight;
   }
 
   .menu #menu-flters li:last-child {
@@ -964,7 +965,7 @@ body {
   }
 
   .menu .menu-content a:hover {
-    color: #cda45e;
+    color: $primary-highlight;
   }
 
   .menu .menu-content span {
@@ -973,7 +974,7 @@ body {
     z-index: 3;
     padding: 0 10px;
     font-weight: 600;
-    color: #cda45e;
+    color: $primary-highlight;
   }
 
   .menu .menu-ingredients {
@@ -1001,23 +1002,23 @@ body {
     transition: 0.3s;
     color: #fff;
     border-radius: 0;
-    border-right: 2px solid #cda45e;
+    border-right: 2px solid $primary-highlight;
     font-weight: 600;
     font-size: 15px;
   }
 
   .specials .nav-link:hover {
-    color: #cda45e;
+    color: $primary-highlight;
   }
 
   .specials .nav-link.active {
     color: #1a1814;
-    background: #cda45e;
-    border-color: #cda45e;
+    background: $primary-highlight;
+    border-color: $primary-highlight;
   }
 
   .specials .nav-link:hover {
-    border-color: #cda45e;
+    border-color: $primary-highlight;
   }
 
   .specials .tab-pane.active {
@@ -1092,7 +1093,7 @@ body {
   .events .event-item h3 {
     font-weight: 600;
     font-size: 26px;
-    color: #cda45e;
+    color: $primary-highlight;
   }
 
   .events .event-item .price {
@@ -1103,7 +1104,7 @@ body {
   }
 
   .events .event-item .price span {
-    border-bottom: 2px solid #cda45e;
+    border-bottom: 2px solid $primary-highlight;
   }
 
   .events .event-item ul {
@@ -1118,7 +1119,7 @@ body {
   .events .event-item ul i {
     font-size: 20px;
     padding-right: 4px;
-    color: #cda45e;
+    color: $primary-highlight;
   }
 
   .events .event-item p:last-child {
@@ -1138,7 +1139,7 @@ body {
   }
 
   .events .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #cda45e;
+    background-color: $primary-highlight;
   }
 
   /*--------------------------------------------------------------
@@ -1195,7 +1196,7 @@ body {
     width: 24px;
     height: 24px;
     margin: 0 10px -6px 0;
-    border: 3px solid #cda45e;
+    border: 3px solid $primary-highlight;
     border-top-color: #1a1814;
     -webkit-animation: animate-loading 1s linear infinite;
     animation: animate-loading 1s linear infinite;
@@ -1205,7 +1206,7 @@ body {
     border-radius: 0;
     box-shadow: none;
     font-size: 14px;
-    background: #0c0b09;
+    background: $base-theme;
     border-color: #625b4b;
     color: white;
   }
@@ -1223,7 +1224,7 @@ body {
   }
 
   .book-a-table .php-email-form input:focus, .book-a-table .php-email-form textarea:focus {
-    border-color: #cda45e;
+    border-color: $primary-highlight;
   }
 
   .book-a-table .php-email-form input {
@@ -1235,7 +1236,7 @@ body {
   }
 
   .book-a-table .php-email-form button[type="submit"] {
-    background: #cda45e;
+    background: $primary-highlight;
     border: 0;
     padding: 10px 35px;
     color: #fff;
@@ -1319,7 +1320,7 @@ body {
   }
 
   .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #cda45e;
+    background-color: $primary-highlight;
   }
 
   /*--------------------------------------------------------------
@@ -1400,7 +1401,7 @@ body {
   }
 
   .chefs .member .social a:hover {
-    color: #cda45e;
+    color: $primary-highlight;
   }
 
   .chefs .member .social i {
@@ -1436,7 +1437,7 @@ body {
     float: left;
     width: 44px;
     height: 44px;
-    background: #cda45e;
+    background: $primary-highlight;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1510,7 +1511,7 @@ body {
     width: 24px;
     height: 24px;
     margin: 0 10px -6px 0;
-    border: 3px solid #cda45e;
+    border: 3px solid $primary-highlight;
     border-top-color: #1a1814;
     -webkit-animation: animate-loading 1s linear infinite;
     animation: animate-loading 1s linear infinite;
@@ -1520,7 +1521,7 @@ body {
     border-radius: 0;
     box-shadow: none;
     font-size: 14px;
-    background: #0c0b09;
+    background: $base-theme;
     border-color: #625b4b;
     color: white;
   }
@@ -1538,7 +1539,7 @@ body {
   }
 
   .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-    border-color: #cda45e;
+    border-color: $primary-highlight;
   }
 
   .contact .php-email-form input {
@@ -1550,7 +1551,7 @@ body {
   }
 
   .contact .php-email-form button[type="submit"] {
-    background: #cda45e;
+    background: $primary-highlight;
     border: 0;
     padding: 10px 35px;
     color: #fff;
@@ -1591,7 +1592,7 @@ body {
   }
 
   #footer .footer-top {
-    background: #0c0b09;
+    background: $base-theme;
     border-top: 1px solid #37332a;
     border-bottom: 1px solid #28251f;
     padding: 60px 0 30px 0;
@@ -1635,7 +1636,7 @@ body {
   }
 
   #footer .footer-top .social-links a:hover {
-    background: #cda45e;
+    background: $primary-highlight;
     color: #fff;
     text-decoration: none;
   }
@@ -1660,7 +1661,7 @@ body {
 
   #footer .footer-top .footer-links ul i {
     padding-right: 2px;
-    color: #cda45e;
+    color: $primary-highlight;
     font-size: 18px;
     line-height: 1;
   }
@@ -1683,7 +1684,7 @@ body {
   }
 
   #footer .footer-top .footer-links ul a:hover {
-    color: #cda45e;
+    color: $primary-highlight;
   }
 
   #footer .footer-top .footer-newsletter form {
@@ -1712,7 +1713,7 @@ body {
     background: none;
     font-size: 16px;
     padding: 0 20px 2px 20px;
-    background: #cda45e;
+    background: $primary-highlight;
     color: #fff;
     transition: 0.3s;
     border-radius: 50px;
