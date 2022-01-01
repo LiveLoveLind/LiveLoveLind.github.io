@@ -859,7 +859,7 @@ body {
     position: relative;
     padding: 80px 0;
   }
-  
+
   .why-us:before {
     content: "";
     background: rgba(20, 31, 20, 0.521);
@@ -1276,7 +1276,7 @@ body {
     position: relative;
     padding: 80px 0;
   }
-  
+
   .testimonials:before {
     content: "";
     background: rgba(20, 31, 20, 0.521);
@@ -1374,11 +1374,16 @@ body {
   //  right: 16px;
   // }
   }
-  .gallery .gallery-item .caption{
+  .gallery .gallery-item .caption {
     font-size: 20px;
     font-weight: bolder;
+    padding-right:.5em;
+    padding-left: .5em;
+    background-color:rgba(0, 0, 0, 0.5);
+    border-top-right-radius: 5px;
     //font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }
+
  .gallery .gallery-item .BL {
     position: absolute;
     bottom: 1px;
