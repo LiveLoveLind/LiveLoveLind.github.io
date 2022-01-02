@@ -52,7 +52,7 @@
 
         <div class="col-lg-8 mt-5 mt-lg-0">
 
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <form id="contact-us-form" action="forms/contact.php" method="post" role="form" class="php-email-form">
             <div class="row">
               <div class="col-md-6 form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -65,7 +65,7 @@
               <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
             </div>
             <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
+              <textarea class="form-control" id="contact-message" name="message" rows="8" placeholder="Message" required></textarea>
             </div>
             <div class="my-3">
               <div class="loading">Loading</div>
@@ -73,7 +73,7 @@
               <div class="sent-message">Your message has been sent. Thank you!</div>
             </div>
             <div class="text-center">
-              <a href="mailto:LiveLoveLind.Weddings@gmail.com?subject=Subject&body=message%20goes%20here">Send Message</a>
+              <a id="submit-contact-form" target="_blank" rel="noopener noreferrer" href="#" style="pointer-events:none">Send Message</a>
             </div>
           </form>
 

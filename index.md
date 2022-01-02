@@ -1,5 +1,6 @@
 ---
 layout: default
+pagename: home
 ---
 <!--
 There should be whitespace between paragraphs.
