@@ -8,8 +8,11 @@
 </head>
 
 <body>
-
+  {% if page.pagename == "home" %}
   {% include header.html %}
+{% elsif page.pagename == "contact" %}
+  {% include header-contact.html %}
+{% endif %}
 
   {% if page.pagename == "home" %}
     {% include hero-section.html %}
