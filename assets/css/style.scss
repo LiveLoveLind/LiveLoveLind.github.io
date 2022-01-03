@@ -216,8 +216,10 @@ body {
   /*--------------------------------------------------------------
   # Book a Date button Menu
   --------------------------------------------------------------*/
+  
   .book-a-table-btn {
-    margin: 0 0 0 15px;
+    text-align: center;
+   //margin: 0 0 0 5px;
     border: 2px solid $primary-highlight;
     color: #fff;
     border-radius: 50px;
@@ -227,6 +229,8 @@ body {
     font-weight: 500;
     letter-spacing: 1px;
     transition: 0.3s;
+    
+   
   }
 
   .book-a-table-btn:hover {
@@ -236,6 +240,7 @@ body {
 
   @media (max-width: 992px) {
     .book-a-table-btn {
+      text-align: center;
       margin: 0 15px 0 0;
       padding: 8px 20px;
     }
@@ -821,8 +826,9 @@ body {
   }
 
   .about .content h3 {
+    text-align: left;
     font-weight: 600;
-    font-size: 26px;
+    font-size: 26px
   }
 
   .about .content ul {
@@ -1489,6 +1495,25 @@ body {
     width: 100%;
   }
 
+/*.contact {
+ 
+    background: url("../img/gray wood leaves.JPEG") center center ;
+    background-size: cover;
+    position: relative;
+    padding: 80px 0;
+  }
+
+  .contact:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+*/
+
   .contact .info i {
     font-size: 20px;
     float: left;
@@ -1645,7 +1670,188 @@ body {
       transform: rotate(360deg);
     }
   }
+/*--------------------------------------------------------------
+  # Contact-main
+  --------------------------------------------------------------*/
+  .contact-main .info {
+    width: 100%;
+  }
 
+.contact-main {
+ 
+    background: url("../img/gray wood leaves.JPEG") center center ;
+    background-size: cover;
+    position: relative;
+    padding: 80px 0;
+  }
+
+  .contact-main:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+
+  .contact-main .info i {
+    font-size: 20px;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: $primary-highlight;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .contact-main .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .contact-main .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #bab3a6;
+  }
+
+  .contact-main .info .open-hours, .contact-main .info .email, .contact-main .info .phone {
+    margin-top: 40px;
+  }
+
+  .contact-main .php-email-form {
+    width: 100%;
+  }
+
+  .contact-main .php-email-form .form-group {
+    padding-bottom: 8px;
+  }
+
+  .contact-main .php-email-form .validate {
+    display: none;
+    color: red;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+  .contact-main .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+
+  .contact-main .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+
+  .contact-main .php-email-form .loading {
+    display: none;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .contact-main .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 5px solid $primary-highlight;
+    border-top-color: #1a1814;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+  }
+
+  .contact-main .php-email-form input, .contact-main .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    background: $base-theme;
+    border-color: #625b4b;
+    color: white;
+  }
+
+  .contact-main .php-email-form input::-webkit-input-placeholder, .contact-main .php-email-form textarea::-webkit-input-placeholder {
+    color: #a49b89;
+  }
+
+  .contact-main .php-email-form input::-moz-placeholder, .contact-main .php-email-form textarea::-moz-placeholder {
+    color: #a49b89;
+  }
+
+  .contact-main .php-email-form input::placeholder, .contact-main .php-email-form textarea::placeholder {
+    color: #a49b89;
+  }
+
+  .contact-main .php-email-form input:focus, .contact-main .php-email-form textarea:focus {
+    border-color: $primary-highlight;
+  }
+
+  .contact-main .php-email-form input {
+    height: 44px;
+  }
+
+  .contact-main .php-email-form textarea {
+    padding: 10px 12px;
+  }
+
+  .contact-main .php-email-form button[type="submit"] {
+    background: $primary-highlight;
+    border: 0;
+    padding: 10px 35px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+
+  .contact-main .php-email-form button[type="submit"]:hover {
+    background: $primary-highlight-dim;
+  }
+  .contact-main .label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+.contact-main .input,
+.contact-main .inputlabel {
+    margin: .4rem 0;
+}
+  @-webkit-keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
   /*--------------------------------------------------------------
   # Footer
   --------------------------------------------------------------*/
