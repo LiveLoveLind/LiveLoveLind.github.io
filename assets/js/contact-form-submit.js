@@ -21,9 +21,22 @@
                 var form = document.getElementById("contact-us-form");
                 var name = form.querySelector("#contact-us-form #name").value;
                 var email = form.querySelector("#contact-us-form #email").value;
+                var role = form.querySelector("#contact-us-form #role").value;
+                var phone = form.querySelector("#contact-us-form #phone").value;
+                var texting = form.querySelector("#contact-us-form #texting").value;
+                var partner_name = form.querySelector("#contact-us-form #partner-name").value;
+                var partner_email = form.querySelector("#contact-us-form #partner-email").value;
+                var partner_role = form.querySelector("#contact-us-form #partner-role").value;
+                var partner_phone = form.querySelector("#contact-us-form #partner-phone").value;
+                var partner_texting = form.querySelector("#contact-us-form #partner-texting").value;
+                var event_date = form.querySelector("#contact-us-form #event-date").value;
+                var flexible = form.querySelector("#contact-us-form #flexible").value;
+                var city = form.querySelector("#contact-us-form #city").value;
+                var venue = form.querySelector("#contact-us-form #venue").value;
+                var service = form.querySelector("#contact-us-form #service").value;
                 var subject = form.querySelector("#contact-us-form #subject").value;
                 var message = form.querySelector("#contact-us-form #contact-message").value;
-                var body = encodeURIComponent("Message received from " + name + " (email: " + email + ") with the subject " + subject + "\n\nMessage:\n" + message);
+                var body = encodeURIComponent("Message received from " + name + " (email: " + email + ") with the subject " + subject +"\n\nWedding Details:\n" + "\n\nWho's Emailing?:\n" + role + "\n\nPhone:\n" + phone + "\n\nCan I text this Number?\n" + texting + "\n\nWho's the lucky someone?\n" + partner_name + "\n\nPartner's Email:\n" + partner_email + "\n\nBride or Groom?\n" + partner_role + "\n\nPartner's Phone Number:\n" + partner_phone + "\n\nCan I text this Number?\n" + partner_texting + "\n\n\nThe Big Day Details:\n" + "\nEvent Date:\n" + event_date + "\n\nIs the start time flexible?\n" + flexible + "\n\nEvent City:\n" + city + "\n\nVenue:\n" + venue + "\n\nService of Interest:\n" + service + "\n\nMessage:\n" + message);
 
                 // update href on submit button with the update email format
                 document.getElementById("submit-contact-form").href = "mailto:LiveLoveLind@gmail.com?subject=LiveLoveLind%20Contact%20Form%20Submission&body=" + body;
