@@ -1,0 +1,20 @@
+                // gather form data
+                var form = document.getElementById("contact-us-form");
+                var name = form.querySelector("#contact-us-form #name").value;
+                var email = form.querySelector("#contact-us-form #email").value;
+                var role = form.querySelector("#contact-form #role").value;
+                var phone = form.querySelector("#contact-form #phone").value;
+                var texting = form.querySelector("#contact-form #texting").value;
+                var partner_name = form.querySelector("#contact-form #partner-name").value;
+                var partner_email = form.querySelector("#contact-form #partner-email").value;
+                var partner_role = form.querySelector("#contact-form #partner-role").value;
+                var partner_phone = form.querySelector("#contact-form #partner-phone").value;
+                var partner_texting = form.querySelector("#contact-form #partner-texting").value;
+                var event_date = form.querySelector("#contact-form #event-date").value;
+                var flexible = form.querySelector("#contact-form #flexible").value;
+                var city = form.querySelector("#contact-form #city").value;
+                var venue = form.querySelector("#contact-form #venue").value;
+                var service = form.querySelector("#contact-form #service").value;
+                var subject = form.querySelector("#contact-us-form #subject").value;
+                var message = form.querySelector("#contact-us-form #contact-message").value;
+                var body = encodeURIComponent("Message received from " + name + " (email: " + email + ") with the subject " + subject +"\n\nWedding Details:\n" + "\n\n Who's Emailing?:\n" + role + "\n\nPhone:\n" + phone + "\n\nCan I text this Number?\n" + texting + "\n\nWho's the lucky someone?\n" + partner_name + "\n\nPartner's Email:\n" + partner_email + "\n\nBride or Groom?\n" + partner_role + "\n\nPartner's Phone Number:\n" + partner_phone + "\n\nCan I text this Number?\n" + partner_texting + "\n\nThe Big Day Details:\n" + "\n\nEvent Date:\n" + event_date + "\n\nIs the start time flexible?\n" + flexible + "\n\nEvent City:\n" + city + "\n\nVenue:\n" + venue + "\n\nService of Interest:\n" + service + "\n\nMessage:\n" + message);
