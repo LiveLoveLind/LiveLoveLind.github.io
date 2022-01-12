@@ -1723,7 +1723,13 @@ body {
     font-size: 14px;
     color: #bab3a6;
   }
-
+  .contact-main .info text {
+    justify-content: center;
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #bab3a6;
+  }
   .contact-main .info .open-hours, .contact-main .info .email, .contact-main .info .phone {
     margin-top: 40px;
   }
