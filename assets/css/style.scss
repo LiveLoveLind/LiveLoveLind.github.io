@@ -905,7 +905,7 @@ body {
   }
 
   .why-us .box:hover {
-    background: $primary-highlight-dim;
+    background: $fill-background-box;
     padding: 30px 30px 70px 30px;
     box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
   }
@@ -1037,9 +1037,13 @@ body {
   }
 
   .specials .nav-link.active {
-    color: #1a1814;
-    background: $primary-highlight-dim;
+    color: $primary-highlight;
+    background: $fill-background-box;
     border-color: $primary-highlight;
+    /*.specials .nav-link.active {
+    color: #fdc1df;
+    background: #872444;
+    border-color: #fdc1df;*/
   }
 
   .specials .nav-link:hover {
