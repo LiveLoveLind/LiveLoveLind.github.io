@@ -787,8 +787,8 @@ body {
 
   .about .about-img::before {
     position: absolute;
-    left: 87px;
-    top: 20px;
+    left: 14%;
+    top: 3.5%;
     width: 60px;
     height: 60px;
     z-index: 1;
@@ -800,8 +800,8 @@ body {
 
   .about .about-img::after {
     position: absolute;
-    right: 87px;
-    bottom: 20px;
+    right: 14%;
+    bottom: 3.5%;
     width: 60px;
     height: 60px;
     z-index: 2;
@@ -816,13 +816,13 @@ body {
   }
 
   .about .about-img:hover::before {
-    left: 40px;
-    top: 10px;
+    left: 7%;
+    top: 1.75%;
   }
 
   .about .about-img:hover::after {
-    right: 40px;
-    bottom: 10px;
+    right: 7%;
+    bottom: 1.75%;
   }
 
   .about .content h3 {
