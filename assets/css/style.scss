@@ -1011,17 +1011,17 @@ body {
   }
 
   /*--------------------------------------------------------------
-  # Specials
+  # Services
   --------------------------------------------------------------*/
-  .specials {
+  .services {
     overflow: hidden;
   }
 
-  .specials .nav-tabs {
+  .services .nav-tabs {
     border: 0;
   }
 
-  .specials .nav-link {
+  .services .nav-link {
     border: 0;
     padding: 12px 15px;
     transition: 0.3s;
@@ -1032,46 +1032,46 @@ body {
     font-size: 15px;
   }
 
-  .specials .nav-link:hover {
+  .services .nav-link:hover {
     color: $primary-highlight;
   }
 
-  .specials .nav-link.active {
+  .services .nav-link.active {
     color: $primary-highlight;
     background: $fill-background-box;
     border-color: $primary-highlight;
-    /*.specials .nav-link.active {
+    /*.services .nav-link.active {
     color: #fdc1df;
     background: #820f46;
     border-color: #fdc1df;*/
   }
 
-  .specials .nav-link:hover {
+  .services .nav-link:hover {
     border-color: $primary-highlight-dim;
   }
 
-  .specials .tab-pane.active {
+  .services .tab-pane.active {
     -webkit-animation: fadeIn 0.5s ease-out;
     animation: fadeIn 0.5s ease-out;
   }
 
-  .specials .details h3 {
+  .services .details h3 {
     font-size: 26px;
     font-weight: 600;
     margin-bottom: 20px;
     color: #fff;
   }
 
-  .specials .details p {
+  .services .details p {
     color: #aaaaaa;
   }
 
-  .specials .details p:last-child {
+  .services .details p:last-child {
     margin-bottom: 0;
   }
 
   @media (max-width: 992px) {
-    .specials .nav-link {
+    .services .nav-link {
       border: 0;
       padding: 15px;
     }
